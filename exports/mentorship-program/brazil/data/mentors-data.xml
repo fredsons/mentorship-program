@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-10-29 22:29:54">
+<x_2273184_mentor_0_mentor action="INSERT_OR_UPDATE">
+<available>true</available>
+<biography>Mentor de teste da área de TI.</biography>
+<concluded_sessions>0</concluded_sessions>
+<expertise_area>it</expertise_area>
+<name display_value="Abel Tuter">62826bf03710200044e0bfc8bcbe5df1</name>
+<number>MEN0001006</number>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-29 21:34:36</sys_created_on>
+<sys_id>1e7daae083185750e9c7f2d6feaad339</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-29 21:34:36</sys_updated_on>
+</x_2273184_mentor_0_mentor>
+<x_2273184_mentor_0_mentor action="INSERT_OR_UPDATE">
+<available>false</available>
+<biography>Bom em finanças </biography>
+<concluded_sessions>0</concluded_sessions>
+<expertise_area>financial</expertise_area>
+<name display_value="Abraham Lincoln">a8f98bb0eb32010045e1a5115206fe3a</name>
+<number>MEN0001007</number>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-29 22:25:42</sys_created_on>
+<sys_id>d83936e883585750e9c7f2d6feaad32e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-29 22:25:42</sys_updated_on>
+</x_2273184_mentor_0_mentor>
+</unload>
