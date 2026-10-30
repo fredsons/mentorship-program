@@ -15,4 +15,4 @@ Todos os vínculos de grupo foram conferidos por sys_id contra os dois grupos ex
 
 Em uma recuperação, instalar primeiro a aplicação com as roles; conferir a existência e os sys_ids dos usuários; importar os grupos e depois seus vínculos de roles e membros. Verificar a propagação das roles e repetir os testes com usuários sem admin. Não importar cópias de roles herdadas por usuário como substituto da associação aos grupos.
 
-Esta exportação não é backup integral da PDI. Restauração não testada. Preservação local confirmada; publicação no GitHub ainda pendente.
+Esta exportação não é backup integral da PDI. Restauração não testada. Cópias publicadas no GitHub no marco de preservação complementar da Atividade 2.

@@ -15,6 +15,7 @@ PDI dev457483, Brazil, escopo x_2273184_mentor_0. Exportações manuais fornecid
 - Os três journals têm os mesmos sys_ids e valores no XML das sessões e no XML separado. Eles são cópias dos mesmos registros, não seis entradas distintas.
 - MTS0001009: criada por admin, mentor Abel, com a nota inicial de acompanhamento.
 - MTS0001015: criada por aileen.mottern, mentor Abel; Description termina em atualizado2, feedback preservado como Feedback de teste do mentor Abel.; contém comentário inicial e nota de trabalho publicados por Aileen.
+- Exportação final de sessões recebida após os testes de State: MTS0001015 em Accepted (30), atualizada por abel.tuter; MTS0001009 permanece Draft (10). A sessão temporária MTS0001016 está ausente, coerente com a exclusão confirmada pelo usuário. As duas transições de State foram observadas no histórico por captura, mas não são journals nem substituem uma exportação do histórico completo de auditoria.
 - O mentor temporário MEN0001013 não está presente, coerente com o teste de exclusão.
 
 ## Recuperação

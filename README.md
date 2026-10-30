@@ -38,7 +38,7 @@ Alterações feitas pelo ServiceNow precisam de novos commits. Após alteraçõe
 
 ## Atividade 2 — estado atual
 
-Configurações de segurança enviadas pelo ServiceNow no commit `7d33fb0f2c064f94daf6445b34b8fc5134096c7b`: roles mentor/mentee, 18 ACLs ativas e menus por perfil. As roles e ACLs provisórias da Atividade 1 foram removidas. Os testes observados e os cenários ainda pendentes estão na documentação da Atividade 2; a validação não cobre toda a matriz CRUD.
+Configurações de segurança enviadas pelo ServiceNow no commit `7d33fb0f2c064f94daf6445b34b8fc5134096c7b`: roles mentor/mentee, 19 ACLs ativas e menus por perfil. As roles e ACLs provisórias da Atividade 1 foram removidas. Os testes observados e os cenários ainda pendentes estão na documentação da Atividade 2; a documentação distingue os resultados observados dos testes por API e de restauração, que não foram executados.
 
 Exportações complementares da Atividade 2 preservam dois grupos, duas atribuições de roles, cinco membros, quatro mentores, duas sessões e três journals. Os usuários referenciados não estão incluídos. O XML de sessões já inclui as mesmas notas do arquivo de journals separado.
 
