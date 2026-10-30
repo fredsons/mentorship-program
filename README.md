@@ -42,4 +42,8 @@ Configurações de segurança enviadas pelo ServiceNow no commit `7d33fb0f2c064f
 
 Exportações complementares da Atividade 2 preservam dois grupos, duas atribuições de roles, cinco membros, quatro mentores, duas sessões e três journals. Os usuários referenciados não estão incluídos. O XML de sessões já inclui as mesmas notas do arquivo de journals separado.
 
-Fluxo automático de aprovação e atualização automática do contador não fazem parte desta entrega.
+A Atividade 2 tratou da segurança. A automação de aprovação e do contador foi implementada na Atividade 3, descrita abaixo.
+
+## Atividade 3 — fluxo e testes validados em 30/10/2026
+
+[Documentação da Atividade 3](docs/ATIVIDADE-3-BRAZIL.md): fluxo ativo como System User, aprovação pelo mentor, espera por feedback, conclusão e incremento via FX Add. Caminhos de aprovação e rejeição validados; Session Feedback ampliado para 4000 caracteres, mantendo HTML. Configuração preservada no commit `40346b001294a112f3b2dbfbe4cfc009a2a4a268`. Exportações dos dados desta atividade ainda pendentes; os XMLs da Atividade 2 são históricos.
