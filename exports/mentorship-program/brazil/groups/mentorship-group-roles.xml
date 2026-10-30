@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-10-30 18:16:18">
+<sys_group_has_role action="INSERT_OR_UPDATE">
+<granted_by display_value="">not-applicable</granted_by>
+<group display_value="Mentorship Program - Mentorados" name="Mentorship Program - Mentorados">0ebf72a883985750e9c7f2d6feaad3e3</group>
+<inherits>true</inherits>
+<role display_value="x_2273184_mentor_0.mentee" name="x_2273184_mentor_0.mentee">3ade762883985750e9c7f2d6feaad3ae</role>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-29 22:54:56</sys_created_on>
+<sys_id>67ffbaa883985750e9c7f2d6feaad324</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-29 22:54:56</sys_updated_on>
+</sys_group_has_role>
+<sys_group_has_role action="INSERT_OR_UPDATE">
+<granted_by display_value="">not-applicable</granted_by>
+<group display_value="Mentorship Program - Mentores" name="Mentorship Program - Mentores">c1a20bec83985750e9c7f2d6feaad3c9</group>
+<inherits>true</inherits>
+<role display_value="x_2273184_mentor_0.mentor" name="x_2273184_mentor_0.mentor">8e1f7e2883985750e9c7f2d6feaad3d6</role>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-29 23:07:14</sys_created_on>
+<sys_id>ffc24b2083d85750e9c7f2d6feaad3c8</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-29 23:07:14</sys_updated_on>
+</sys_group_has_role>
+</unload>

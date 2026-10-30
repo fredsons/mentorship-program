@@ -15,6 +15,7 @@ Aplicação ServiceNow para cadastrar mentores e acompanhar sessões de mentoria
 ## Conteúdo
 
 - O diretório `540f96e483945750e9c7f2d6feaad334/` contém os arquivos gerados pelo Source control do ServiceNow.
+- [Documentação da Atividade 2](https://github.com/fredsons/mentorship-program/blob/main/docs/ATIVIDADE-2-BRAZIL.md): roles, grupos, ACLs, menus, testes e limites da validação.
 - [Documentação da Atividade 1](https://github.com/fredsons/mentorship-program/blob/main/docs/ATIVIDADE-1-BRAZIL.md): etapas, decisões e validações.
 - [Exportações complementares](https://github.com/fredsons/mentorship-program/tree/main/exports/mentorship-program/brazil): dados de teste e layout Global de Approvers.
 
@@ -35,6 +36,10 @@ Para recuperar, instalar/importar primeiro a aplicação; conferir os usuários 
 
 Alterações feitas pelo ServiceNow precisam de novos commits. Após alterações feitas diretamente no GitHub, sincronizar pelo menu **Source control → Pull from repository** antes de continuar o desenvolvimento. Havendo mudanças locais, preservá-las antes de atualizar; não descartá-las para resolver conflitos.
 
-## Próxima etapa
+## Atividade 2 — estado atual
 
-A Atividade 2 tratará roles, grupos, ACLs e restrições de menus. As permissões atuais são provisórias da Atividade 1. Fluxo automático de aprovação e atualização automática do contador ainda não foram implementados.
+Configurações de segurança enviadas pelo ServiceNow no commit `7d33fb0f2c064f94daf6445b34b8fc5134096c7b`: roles mentor/mentee, 18 ACLs ativas e menus por perfil. As roles e ACLs provisórias da Atividade 1 foram removidas. Os testes observados e os cenários ainda pendentes estão na documentação da Atividade 2; a validação não cobre toda a matriz CRUD.
+
+Exportações complementares da Atividade 2 preservam dois grupos, duas atribuições de roles, cinco membros, quatro mentores, duas sessões e três journals. Os usuários referenciados não estão incluídos. O XML de sessões já inclui as mesmas notas do arquivo de journals separado.
+
+Fluxo automático de aprovação e atualização automática do contador não fazem parte desta entrega.

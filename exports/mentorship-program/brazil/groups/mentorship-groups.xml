@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-10-30 18:16:04">
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description>Podem criar e alterar sessões de mentoria e informações de mentores.</description>
+<email/>
+<exclude_manager>false</exclude_manager>
+<include_members>false</include_members>
+<manager display_value=""/>
+<name>Mentorship Program - Mentores</name>
+<parent display_value=""/>
+<roles/>
+<source/>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-29 23:06:45</sys_created_on>
+<sys_id>c1a20bec83985750e9c7f2d6feaad3c9</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-29 23:06:45</sys_updated_on>
+<type/>
+</sys_user_group>
+<sys_user_group action="INSERT_OR_UPDATE">
+<active>true</active>
+<cost_center display_value=""/>
+<default_assignee display_value=""/>
+<description>Podem criar e alterar sessões de mentoria.</description>
+<email/>
+<exclude_manager>false</exclude_manager>
+<include_members>false</include_members>
+<manager display_value=""/>
+<name>Mentorship Program - Mentorados</name>
+<parent display_value=""/>
+<roles/>
+<source/>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-29 22:54:16</sys_created_on>
+<sys_id>0ebf72a883985750e9c7f2d6feaad3e3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-29 22:54:16</sys_updated_on>
+<type/>
+</sys_user_group>
+</unload>
