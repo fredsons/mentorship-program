@@ -2,6 +2,6 @@
     <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="5c4966e883d45750e9c7f2d6feaad331" extends="task" label="Mentorship Session" max_length="40" name="x_2273184_mentor_0_mentorship_session" type="collection">
         <element label="Session Date" max_length="40" name="session_date" type="glide_date_time"/>
         <element label="Mentor’s Name" max_length="32" name="mentors_name" reference="x_2273184_mentor_0_mentor" reference_qual="available=true^EQ" reference_qual_condition="available=true^EQ" type="reference"/>
-        <element label="Session Feedback" max_length="40" name="session_feedback" type="html"/>
+        <element label="Session Feedback" max_length="4000" name="session_feedback" type="html"/>
     </element>
 </database>
