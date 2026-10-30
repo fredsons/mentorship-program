@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-10-30 21:45:26">
+<x_2273184_mentor_0_mentorship_session action="INSERT_OR_UPDATE">
+<active>true</active>
+<activity_due/>
+<additional_assignee_list/>
+<approval>not requested</approval>
+<approval_history/>
+<approval_set/>
+<assigned_to display_value=""/>
+<assignment_group display_value=""/>
+<business_duration/>
+<business_service display_value=""/>
+<calendar_duration/>
+<close_notes/>
+<closed_at/>
+<closed_by display_value=""/>
+<cmdb_ci display_value=""/>
+<comments/>
+<comments_and_work_notes/>
+<company display_value=""/>
+<contact_type/>
+<contract display_value=""/>
+<correlation_display/>
+<correlation_id/>
+<delivery_plan display_value=""/>
+<delivery_task display_value=""/>
+<description>Alinhamento de objetivos e plano de desenvolvimento.</description>
+<due_date/>
+<escalation>0</escalation>
+<expected_start/>
+<follow_up/>
+<group_list/>
+<impact>3</impact>
+<knowledge>false</knowledge>
+<location display_value=""/>
+<made_sla>true</made_sla>
+<mentors_name display_value="Abel Tuter">1e7daae083185750e9c7f2d6feaad339</mentors_name>
+<number>MTS0001009</number>
+<opened_at>2026-10-29 21:37:42</opened_at>
+<opened_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</opened_by>
+<order/>
+<parent display_value=""/>
+<priority>4</priority>
+<reassignment_count>0</reassignment_count>
+<rejection_goto display_value=""/>
+<route_reason/>
+<service_offering display_value=""/>
+<session_date>2026-10-30 21:38:21</session_date>
+<session_feedback/>
+<short_description>Sessão inicial de mentoria em TI</short_description>
+<sla_due/>
+<state>10</state>
+<sys_class_name>x_2273184_mentor_0_mentorship_session</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-29 21:38:39</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>945ea26483185750e9c7f2d6feaad3f7</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-10-29 21:38:39</sys_updated_on>
+<task_effective_number>MTS0001009</task_effective_number>
+<time_worked/>
+<universal_request display_value=""/>
+<upon_approval>proceed</upon_approval>
+<upon_reject>cancel</upon_reject>
+<urgency>3</urgency>
+<user_input/>
+<variables/>
+<watch_list/>
+<wf_activity display_value=""/>
+<work_end/>
+<work_notes/>
+<work_notes_list/>
+<work_start/>
+</x_2273184_mentor_0_mentorship_session>
+<sys_journal_field action="INSERT_OR_UPDATE">
+<element>work_notes</element>
+<element_id>945ea26483185750e9c7f2d6feaad3f7</element_id>
+<name>x_2273184_mentor_0_mentorship_session</name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-29 21:38:39</sys_created_on>
+<sys_id>ce8e62ac83d45750e9c7f2d6feaad334</sys_id>
+<value>Primeiro registro de acompanhamento.</value>
+</sys_journal_field>
+<x_2273184_mentor_0_mentorship_session action="INSERT_OR_UPDATE">
+<active>true</active>
+<activity_due/>
+<additional_assignee_list/>
+<approval>not requested</approval>
+<approval_history/>
+<approval_set/>
+<assigned_to display_value=""/>
+<assignment_group display_value=""/>
+<business_duration/>
+<business_service display_value=""/>
+<calendar_duration/>
+<close_notes/>
+<closed_at/>
+<closed_by display_value=""/>
+<cmdb_ci display_value=""/>
+<comments/>
+<comments_and_work_notes/>
+<company display_value=""/>
+<contact_type/>
+<contract display_value=""/>
+<correlation_display/>
+<correlation_id/>
+<delivery_plan display_value=""/>
+<delivery_task display_value=""/>
+<description>Sessão criada por Aileen para validar as permissões. - atualizado2</description>
+<due_date/>
+<escalation>0</escalation>
+<expected_start/>
+<follow_up/>
+<group_list/>
+<impact>3</impact>
+<knowledge>false</knowledge>
+<location display_value=""/>
+<made_sla>true</made_sla>
+<mentors_name display_value="Abel Tuter">1e7daae083185750e9c7f2d6feaad339</mentors_name>
+<number>MTS0001015</number>
+<opened_at>2026-10-30 15:56:22</opened_at>
+<opened_by display_value="Aileen Mottern">71826bf03710200044e0bfc8bcbe5d3b</opened_by>
+<order/>
+<parent display_value=""/>
+<priority>4</priority>
+<reassignment_count>0</reassignment_count>
+<rejection_goto display_value=""/>
+<route_reason/>
+<service_offering display_value=""/>
+<session_date>2026-10-31 15:57:32</session_date>
+<session_feedback><![CDATA[Feedback de teste do mentor Abel.]]></session_feedback>
+<short_description>Teste de acesso — Aileen</short_description>
+<sla_due/>
+<state>30</state>
+<sys_class_name>x_2273184_mentor_0_mentorship_session</sys_class_name>
+<sys_created_by>aileen.mottern</sys_created_by>
+<sys_created_on>2026-10-30 15:57:52</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>fdc9e6308394d750e9c7f2d6feaad38e</sys_id>
+<sys_mod_count>6</sys_mod_count>
+<sys_updated_by>abel.tuter</sys_updated_by>
+<sys_updated_on>2026-10-30 18:56:14</sys_updated_on>
+<task_effective_number>MTS0001015</task_effective_number>
+<time_worked/>
+<universal_request display_value=""/>
+<upon_approval>proceed</upon_approval>
+<upon_reject>cancel</upon_reject>
+<urgency>3</urgency>
+<user_input/>
+<variables/>
+<watch_list/>
+<wf_activity display_value=""/>
+<work_end/>
+<work_notes/>
+<work_notes_list/>
+<work_start/>
+</x_2273184_mentor_0_mentorship_session>
+<sys_journal_field action="INSERT_OR_UPDATE">
+<element>comments</element>
+<element_id>fdc9e6308394d750e9c7f2d6feaad38e</element_id>
+<name>x_2273184_mentor_0_mentorship_session</name>
+<sys_created_by>aileen.mottern</sys_created_by>
+<sys_created_on>2026-10-30 15:57:52</sys_created_on>
+<sys_id>0c2aae308394d750e9c7f2d6feaad3c7</sys_id>
+<value>Comentário inicial de teste.</value>
+</sys_journal_field>
+<sys_journal_field action="INSERT_OR_UPDATE">
+<element>work_notes</element>
+<element_id>fdc9e6308394d750e9c7f2d6feaad38e</element_id>
+<name>x_2273184_mentor_0_mentorship_session</name>
+<sys_created_by>aileen.mottern</sys_created_by>
+<sys_created_on>2026-10-30 16:08:40</sys_created_on>
+<sys_id>4a9ceab48394d750e9c7f2d6feaad396</sys_id>
+<value>Teste de nota de trabalho por Aileen.</value>
+</sys_journal_field>
+<x_2273184_mentor_0_mentorship_session action="INSERT_OR_UPDATE">
+<active>true</active>
+<activity_due/>
+<additional_assignee_list/>
+<approval>approved</approval>
+<approval_history/>
+<approval_set>2026-10-30 20:53:06</approval_set>
+<assigned_to display_value=""/>
+<assignment_group display_value=""/>
+<business_duration/>
+<business_service display_value=""/>
+<calendar_duration/>
+<close_notes/>
+<closed_at/>
+<closed_by display_value=""/>
+<cmdb_ci display_value=""/>
+<comments/>
+<comments_and_work_notes/>
+<company display_value=""/>
+<contact_type/>
+<contract display_value=""/>
+<correlation_display/>
+<correlation_id/>
+<delivery_plan display_value=""/>
+<delivery_task display_value=""/>
+<description/>
+<due_date/>
+<escalation>0</escalation>
+<expected_start/>
+<follow_up/>
+<group_list/>
+<impact>3</impact>
+<knowledge>false</knowledge>
+<location display_value=""/>
+<made_sla>true</made_sla>
+<mentors_name display_value="Abel Tuter">1e7daae083185750e9c7f2d6feaad339</mentors_name>
+<number>MTS0001017</number>
+<opened_at>2026-10-30 20:50:20</opened_at>
+<opened_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</opened_by>
+<order/>
+<parent display_value=""/>
+<priority>4</priority>
+<reassignment_count>0</reassignment_count>
+<rejection_goto display_value=""/>
+<route_reason/>
+<service_offering display_value=""/>
+<session_date>2026-11-07 21:50:33</session_date>
+<session_feedback><![CDATA[<p><code>Sessão concluída. Objetivos e próximos passos definidos.</code></p>]]></session_feedback>
+<short_description>Atividade 3 — teste de aprovação</short_description>
+<sla_due/>
+<state>50</state>
+<sys_class_name>x_2273184_mentor_0_mentorship_session</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-10-30 20:50:52</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>081d2774839cd750e9c7f2d6feaad325</sys_id>
+<sys_mod_count>8</sys_mod_count>
+<sys_updated_by>abel.tuter</sys_updated_by>
+<sys_updated_on>2026-10-30 21:06:14</sys_updated_on>
+<task_effective_number>MTS0001017</task_effective_number>
+<time_worked/>
+<universal_request display_value=""/>
+<upon_approval>proceed</upon_approval>
+<upon_reject>cancel</upon_reject>
+<urgency>3</urgency>
+<user_input/>
+<variables/>
+<watch_list/>
+<wf_activity display_value=""/>
+<work_end/>
+<work_notes/>
+<work_notes_list/>
+<work_start/>
+</x_2273184_mentor_0_mentorship_session>
+<sys_journal_field action="INSERT_OR_UPDATE">
+<element>approval_history</element>
+<element_id>081d2774839cd750e9c7f2d6feaad325</element_id>
+<name>x_2273184_mentor_0_mentorship_session</name>
+<sys_created_by>system</sys_created_by>
+<sys_created_on>2026-10-30 20:53:05</sys_created_on>
+<sys_id>94bd67b4839cd750e9c7f2d6feaad352</sys_id>
+<value>System Administrator approved the task by impersonating Abel Tuter</value>
+</sys_journal_field>
+<sys_journal_field action="INSERT_OR_UPDATE">
+<element>approval_history</element>
+<element_id>081d2774839cd750e9c7f2d6feaad325</element_id>
+<name>x_2273184_mentor_0_mentorship_session</name>
+<sys_created_by>system</sys_created_by>
+<sys_created_on>2026-10-30 20:50:56</sys_created_on>
+<sys_id>b43d2b74839cd750e9c7f2d6feaad3c0</sys_id>
+<value>Abel Tuter requested to approve task</value>
+</sys_journal_field>
+<x_2273184_mentor_0_mentorship_session action="INSERT_OR_UPDATE">
+<active>true</active>
+<activity_due/>
+<additional_assignee_list/>
+<approval>rejected</approval>
+<approval_history/>
+<approval_set>2026-10-30 21:20:58</approval_set>
+<assigned_to display_value=""/>
+<assignment_group display_value=""/>
+<business_duration/>
+<business_service display_value=""/>
+<calendar_duration/>
+<close_notes/>
+<closed_at/>
+<closed_by display_value=""/>
+<cmdb_ci display_value=""/>
+<comments/>
+<comments_and_work_notes/>
+<company display_value=""/>
+<contact_type/>
+<contract display_value=""/>
+<correlation_display/>
+<correlation_id/>
+<delivery_plan display_value=""/>
+<delivery_task display_value=""/>
+<description/>
+<due_date/>
+<escalation>0</escalation>
+<expected_start/>
+<follow_up/>
+<group_list/>
+<impact>3</impact>
+<knowledge>false</knowledge>
+<location display_value=""/>
+<made_sla>true</made_sla>
+<mentors_name display_value="Abel Tuter">1e7daae083185750e9c7f2d6feaad339</mentors_name>
+<number>MTS0001018</number>
+<opened_at>2026-10-30 21:11:24</opened_at>
+<opened_by display_value="Abel Tuter">62826bf03710200044e0bfc8bcbe5df1</opened_by>
+<order/>
+<parent display_value=""/>
+<priority>4</priority>
+<reassignment_count>0</reassignment_count>
+<rejection_goto display_value=""/>
+<route_reason/>
+<service_offering display_value=""/>
+<session_date>2027-01-08 22:11:34</session_date>
+<session_feedback/>
+<short_description>Atividade 3 — teste de rejeição</short_description>
+<sla_due/>
+<state>40</state>
+<sys_class_name>x_2273184_mentor_0_mentorship_session</sys_class_name>
+<sys_created_by>abel.tuter</sys_created_by>
+<sys_created_on>2026-10-30 21:14:24</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>e4e1f33083dcd750e9c7f2d6feaad3f5</sys_id>
+<sys_mod_count>5</sys_mod_count>
+<sys_updated_by>system</sys_updated_by>
+<sys_updated_on>2026-10-30 21:20:58</sys_updated_on>
+<task_effective_number>MTS0001018</task_effective_number>
+<time_worked/>
+<universal_request display_value=""/>
+<upon_approval>proceed</upon_approval>
+<upon_reject>cancel</upon_reject>
+<urgency>3</urgency>
+<user_input/>
+<variables/>
+<watch_list/>
+<wf_activity display_value=""/>
+<work_end/>
+<work_notes/>
+<work_notes_list/>
+<work_start/>
+</x_2273184_mentor_0_mentorship_session>
+<sys_journal_field action="INSERT_OR_UPDATE">
+<element>approval_history</element>
+<element_id>e4e1f33083dcd750e9c7f2d6feaad3f5</element_id>
+<name>x_2273184_mentor_0_mentorship_session</name>
+<sys_created_by>system</sys_created_by>
+<sys_created_on>2026-10-30 21:14:25</sys_created_on>
+<sys_id>b492f77083dcd750e9c7f2d6feaad3de</sys_id>
+<value>Abel Tuter requested to approve task</value>
+</sys_journal_field>
+<sys_journal_field action="INSERT_OR_UPDATE">
+<element>approval_history</element>
+<element_id>e4e1f33083dcd750e9c7f2d6feaad3f5</element_id>
+<name>x_2273184_mentor_0_mentorship_session</name>
+<sys_created_by>system</sys_created_by>
+<sys_created_on>2026-10-30 21:20:57</sys_created_on>
+<sys_id>e414373483dcd750e9c7f2d6feaad328</sys_id>
+<value>System Administrator rejected the task by impersonating Abel Tuter
+
+Approval comments:
+2026-10-30 14:20:57 - Abel Tuter (Comments)
+Sessão rejeitada para validar o caminho de rejeição da atividade 3.
+
+</value>
+</sys_journal_field>
+</unload>

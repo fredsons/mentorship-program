@@ -58,7 +58,7 @@ A atualização automática pode ocorrer depois de a página ser carregada. No t
 - Commit nativo confirmado por captura e consulta ao GitHub: fluxo ativo/publicado com `run_as=system`, além de Session Feedback HTML com `max_length=4000`.
 - Dados atuais de mentores, sessões, aprovações e comentários não são preservados automaticamente pelo commit da configuração.
 - As exportações da Atividade 2 continuam sendo marcos históricos: não incluem as duas sessões novas nem o contador final da Atividade 3.
-- Exportações complementares da Atividade 3 ainda pendentes neste marco.
+- Exportações complementares conferidas em `exports/mentorship-program/brazil/data/atividade-3-2026-10-30/`: 4 mentores, 4 sessões, 2 aprovações e 8 journals incorporados aos XMLs (7 das sessões e 1 comentário da aprovação rejeitada). Estados finais, contador e referências consistentes. Usuários, auditoria completa e contextos de execução não estão incluídos.
 - Testes de concorrência entre conclusões simultâneas, restauração em outra PDI e chamadas por API não foram executados. A soma via leitura e atualização não foi validada como incremento atômico.
 - O fluxo usa o mentor referenciado na sessão; troca de mentor durante a execução não foi testada.
 - O critério visual implementado é “Session Feedback is not empty”; HTML contendo apenas marcações vazias não foi testado.
@@ -69,3 +69,4 @@ A atualização automática pode ocorrer depois de a página ser carregada. No t
 - Capturas da configuração e dos testes fornecidas pelo usuário.
 - [Arquivo nativo do fluxo](https://github.com/fredsons/mentorship-program/blob/main/540f96e483945750e9c7f2d6feaad334/update/sys_hub_flow_ee491b30831cd750e9c7f2d6feaad3b8.xml).
 - [Tipos de campos — documentação ServiceNow](https://www.servicenow.com/docs/r/platform-administration/r_FieldTypes.html).
+
