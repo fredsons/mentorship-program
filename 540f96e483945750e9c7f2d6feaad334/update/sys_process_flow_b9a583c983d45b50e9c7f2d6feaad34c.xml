@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_2273184_mentor_0_mentorship_session">state=10^EQ<item display_value="Draft" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="10"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Draft</label>
+        <name>draft</name>
+        <order>100</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-31 12:37:44</sys_created_on>
+        <sys_id>b9a583c983d45b50e9c7f2d6feaad34c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>draft</sys_name>
+        <sys_package display_value="Mentorship Program" source="x_2273184_mentor_0">540f96e483945750e9c7f2d6feaad334</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mentorship Program">540f96e483945750e9c7f2d6feaad334</sys_scope>
+        <sys_update_name>sys_process_flow_b9a583c983d45b50e9c7f2d6feaad34c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-31 12:37:44</sys_updated_on>
+        <table>x_2273184_mentor_0_mentorship_session</table>
+    </sys_process_flow>
+</record_update>
