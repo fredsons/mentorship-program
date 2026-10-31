@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="user_criteria">
+    <user_criteria action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <company/>
+        <department/>
+        <group>0ebf72a883985750e9c7f2d6feaad3e3,c1a20bec83985750e9c7f2d6feaad3c9<sys_user_group name="Mentorship Program - Mentorados">0ebf72a883985750e9c7f2d6feaad3e3</sys_user_group>
+            <sys_user_group name="Mentorship Program - Mentores">c1a20bec83985750e9c7f2d6feaad3c9</sys_user_group>
+        </group>
+        <location/>
+        <match_all>false</match_all>
+        <name>Mentorship Program Users</name>
+        <role/>
+        <script/>
+        <short_description/>
+        <sys_class_name>user_criteria</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-31 11:56:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7e3cfa0983945b50e9c7f2d6feaad3a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Mentorship Program Users</sys_name>
+        <sys_package display_value="Mentorship Program" source="x_2273184_mentor_0">540f96e483945750e9c7f2d6feaad334</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mentorship Program">540f96e483945750e9c7f2d6feaad334</sys_scope>
+        <sys_update_name>user_criteria_7e3cfa0983945b50e9c7f2d6feaad3a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-31 11:56:46</sys_updated_on>
+        <user/>
+    </user_criteria>
+    <sys_translated_text action="delete_multiple" query="documentkey=7e3cfa0983945b50e9c7f2d6feaad3a5"/>
+</record_update>
