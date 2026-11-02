@@ -2,7 +2,7 @@
 
 Aplicação ServiceNow para cadastrar mentores, solicitar sessões de mentoria e acompanhar sua aprovação e conclusão. Desenvolvida durante o bootcamp Shark Academy, com preferência por configurações nativas e ferramentas visuais.
 
-**Estado em 30/10/2026:** Atividades 1, 2 e 3 concluídas, com testes funcionais observados e arquivos preservados neste repositório. Uma possível atividade da última aula ainda depende da divulgação do enunciado.
+**Estado em 31/10/2026:** Atividades 1, 2 e 3 concluídas, com testes funcionais observados e arquivos preservados neste repositório. A Atividade 4 (Record Producer, acesso por grupos e menu no portal) está implementada, mas ainda não tem documento em `docs/` nem testes registrados. Uma possível atividade da última aula ainda depende da divulgação do enunciado.
 
 O projeto Shark Academy reúne as atividades do bootcamp; este repositório é dedicado à aplicação Mentorship Program.
 
@@ -15,6 +15,8 @@ O projeto Shark Academy reúne as atividades do bootcamp; este repositório é d
 - Solicita aprovação ao usuário associado ao mentor selecionado.
 - Após aprovação, aguarda o feedback, conclui a sessão e acrescenta uma unidade ao contador do mentor.
 - Em caso de rejeição, encerra o caminho com a sessão em Rejected/Canceled, sem incrementar o contador.
+- Permite solicitar uma sessão pelo portal, com um Record Producer restrito aos grupos da aplicação.
+- Impede datas de sessão anteriores a hoje, tanto no formulário da plataforma quanto no portal.
 
 ## Atividades entregues
 
@@ -23,6 +25,7 @@ O projeto Shark Academy reúne as atividades do bootcamp; este repositório é d
 | 1 — Estrutura da aplicação | Tabelas, campos, estados, formulários, listas, referências e menu tradicional | [Etapas e decisões](docs/ATIVIDADE-1-BRAZIL.md) |
 | 2 — Segurança e acessos | Roles, grupos, ACLs, restrições por proprietário e visibilidade dos módulos | [Configuração e testes](docs/ATIVIDADE-2-BRAZIL.md) |
 | 3 — Flow Designer | Aprovação pelo mentor, espera pelo feedback, conclusão e incremento do contador | [Fluxo e validações](docs/ATIVIDADE-3-BRAZIL.md) |
+| 4 — Portal | Record Producer, acesso por grupos e item de menu no portal | A documentar (ver [Portal e Record Producer](#portal-e-record-producer)) |
 
 As instruções das atividades definem os requisitos. A documentação registra a implementação realizada e seus limites, sem antecipar requisitos de atividades futuras.
 
@@ -125,6 +128,35 @@ O aprovador é obtido pelo caminho **Mentor's Name → Name**, chegando ao usuá
 
 O gatilho é **Record Created**. Editar uma sessão já concluída não inicia uma nova execução desse gatilho. O ramo de rejeição não passa pela espera de feedback nem pelo incremento.
 
+## Portal e Record Producer
+
+Implementado na Atividade 4 (commit [2f66b96](https://github.com/fredsons/mentorship-program/commit/2f66b96)). Ainda não há documento em `docs/` nem testes registrados para esta parte.
+
+**Mentorship Session** (Record Producer, ativo) cria registros na tabela Mentorship Session. Descrição exibida: "Request here your mentorship session!".
+
+| Ordem | Pergunta | Campo de destino | Tipo | Obrigatória |
+|---|---|---|---|---|
+| 100 | What's your session subject? | `short_description` | Texto de uma linha | Sim |
+| 200 | Describe your needs for this session | `description` | Texto de várias linhas | Não |
+| 300 | When would you like to schedule your session? | `session_date` | Data e hora | Sim |
+| 400 | Choose your mentor | `mentors_name` | Referência a Mentor, filtrada por Available = true | Sim |
+
+- **Acesso:** o item usa o User Criteria **Mentorship Program Users**, que reconhece os grupos *Mentorship Program - Mentorados* e *Mentorship Program - Mentores* (basta pertencer a um deles).
+- **Menu:** item **New Mentorship Session** no portal, apontando para o Record Producer.
+- O script do Record Producer é o modelo padrão da plataforma, sem lógica adicional.
+
+## Validações e ajustes de formulário
+
+| Recurso | O que faz |
+|---|---|
+| Business Rule **Impedir data de sessão anterior a hoje.** | Executa antes de inserir ou atualizar. Aborta a gravação quando Session Date é anterior ao início de hoje e o campo foi alterado, e exibe "A data da sessão não pode ser anterior a hoje." A lógica está na condição de filtro; o script está vazio. |
+| Catalog UI Policy **Validar data da sessão no portal** | No portal, mostra a mesma mensagem de erro no campo de data quando ele é anterior a hoje, antes do envio. Sem script. |
+| UI Policy **Obrigatoriedade dos campos da sessão** | Torna Short description, Mentor's Name e Session Date obrigatórios no formulário da plataforma. |
+| UI Policy **Exibir feedback em sessões aceitas ou concluídas** | Mostra Session Feedback somente quando State é Accepted ou Done. |
+| Process Flow no formulário | Barra de fases: Draft → Awaiting approval → Accepted → Done, com Rejected/Canceled como desfecho alternativo. |
+
+A regra de negócio vale para qualquer origem de gravação, inclusive o portal, e a Catalog UI Policy é apenas o aviso antecipado no portal. Os testes dessas validações ainda não estão documentados.
+
 ## Validação realizada
 
 | Cenário | Resultado observado |
@@ -178,4 +210,4 @@ Marcos recentes:
 
 Alterações feitas na PDI precisam de novos commits pelo **Source control → Commit changes**. Depois de alterações feitas diretamente neste repositório, executar **Source control → Pull from repository** na aplicação antes de continuar o desenvolvimento, preservando eventuais alterações locais.
 
-Os testes atuais cobrem os caminhos funcionais descritos. Concorrência entre conclusões simultâneas, alteração do mentor durante uma execução, conteúdo HTML composto apenas por marcações vazias e chamadas por API não foram validados. Novas atividades serão incorporadas conforme seus enunciados forem disponibilizados.
+Os testes atuais cobrem os caminhos funcionais das Atividades 1 a 3; portal e validações de data ainda não foram documentados. Concorrência entre conclusões simultâneas, alteração do mentor durante uma execução, conteúdo HTML composto apenas por marcações vazias e chamadas por API não foram validados. Novas atividades serão incorporadas conforme seus enunciados forem disponibilizados.
