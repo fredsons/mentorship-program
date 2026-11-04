@@ -13,7 +13,7 @@ As quatro atividades e os extras de Mentorship Program estão implementados e do
 | Melhoria visual da data no portal | `227e9bb575a97ce016c5f66c6cf3cc369946c670` |
 | README atualizado em 04/11 | `9e151bfe50430160c3a09abd8f4847a896822022` |
 
-MTS0001019 foi criada pelo portal, aprovada e observada em Accepted. Os XMLs de dados listados mais recentes continuam sendo os da Atividade 3. Exportação dos dados da Atividade 4, conferência de componentes Global/outros escopos e restauração em outra PDI permanecem sem confirmação. A revisão atual publica documentação; não altera a aplicação na PDI nem gera novos exports.
+MTS0001019 foi criada pelo portal, aprovada e observada em Accepted. Os XMLs de dados listados mais recentes continuam sendo os da Atividade 3. Exportação dos dados da Atividade 4 e conferência de componentes Global/outros escopos permanecem sem confirmação. A PDI antiga dev435099 (Zurich) foi liberada pelo usuário. A restauração em outra PDI não foi testada e não está planejada; não integra as pendências do projeto. Essa decisão atual substitui as expectativas históricas de recuperação registradas abaixo. A revisão atual publica documentação; não altera a aplicação na PDI nem gera novos exports.
 
 Após alterações documentais externas, sincronizar a PDI por Pull from repository antes de novos commits, preservando mudanças locais. Markdown e exports fora da pasta nativa não viram registros da plataforma.
 
@@ -21,7 +21,7 @@ Após alterações documentais externas, sincronizar a PDI por Pull from reposit
 
 Shark Academy reúne as atividades do bootcamp e pode conter várias aplicações. Mentorship Program é a primeira aplicação; sua documentação da Atividade 1 está em DOCUMENTACAO.md e descreve a implementação original em Zurich.
 
-- PDI original: dev435099, Zurich. Indisponível; sem exportação confirmada. Preservar seu vínculo enquanto pode se recuperar.
+- PDI original: dev435099, Zurich. Foi liberada pelo usuário, conforme confirmação em 04/11/2026; sem exportação confirmada dessa implementação. A expectativa anterior de recuperação foi encerrada.
 - PDI da reconstrução: dev457483, Brazil. Atividade 1 concluída com tabelas, formulários, listas, referências, menu, validações e exportações complementares publicadas no GitHub. Controle de versão ativo; papéis e acessos definitivos da Atividade 2 ainda pendentes.
 - Conta GitHub conectada identificada: fredsons.
 
