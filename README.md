@@ -2,7 +2,7 @@
 
 Aplicação ServiceNow para cadastrar mentores, solicitar sessões de mentoria e acompanhar sua aprovação e conclusão. Desenvolvida durante o bootcamp Shark Academy, com preferência por configurações nativas e ferramentas visuais.
 
-**Estado em 04/11/2026:** Atividades 1, 2, 3 e 4 implementadas, incluindo os extras da Atividade 4 e a melhoria da validação visual da data no portal. Os testes foram acompanhados pelas capturas e confirmações do usuário. As configurações foram enviadas ao controle de versão pela instância; a exportação atualizada dos dados da Atividade 4 ainda precisa ser confirmada.
+**Projeto concluído em 04/11/2026 por decisão do usuário.** As quatro atividades e os extras de Mentorship Program estão encerrados, com implementação, testes registrados e documentação publicada. Exports adicionais dos dados de teste da Atividade 4 foram dispensados para o encerramento. A restauração não está planejada; a PDI antiga foi liberada. Não há ação pendente para concluir esta entrega. Os limites de preservação e os cenários não testados permanecem registrados como histórico, sem representar tarefas abertas.
 
 O projeto Shark Academy reúne as atividades do bootcamp; este repositório é dedicado à aplicação Mentorship Program.
 
@@ -195,13 +195,13 @@ A Atividade 4 acrescenta o Record Producer de sessões de mentoria e seu acesso 
 
 Consulte [Atividade 4 e extras — configuração, decisões e testes](docs/ATIVIDADE-4-BRAZIL.md) para os passos e as evidências. Foram observados a criação pelo portal, a solicitação de aprovação, o aceite e os testes de acesso e validação. A sessão MTS0001019 chegou a Accepted; sua conclusão e incremento do contador não estão comprovados nesta etapa.
 
-O usuário confirmou a preservação das configurações. Commits conferidos: Atividade 4 `2f66b9616445d6c4d664b5a41c691f8686f43599`, extras `dbe11f71cb27956a14dc401c54eaae29a1d8d768` e melhoria da data `227e9bb575a97ce016c5f66c6cf3cc369946c670`. Os exports atualizados dos dados ainda precisam ser confirmados. Arquivos de documentação e exports não são carregados na instância pelo Pull do source control.
+O usuário confirmou a preservação das configurações. Commits conferidos: Atividade 4 `2f66b9616445d6c4d664b5a41c691f8686f43599`, extras `dbe11f71cb27956a14dc401c54eaae29a1d8d768` e melhoria da data `227e9bb575a97ce016c5f66c6cf3cc369946c670`. Os exports adicionais dos dados de teste da Atividade 4 foram dispensados pelo usuário no encerramento. Arquivos de documentação e exports não são carregados na instância pelo Pull do source control.
 
 
-## Fontes, histórico e pendências atuais
+## Fontes, histórico e encerramento
 
 - [Inventário de fontes](docs/FONTES.md): enunciados das quatro atividades, slides e documentação oficial.
 - [Marcos de versionamento](docs/VERSIONAMENTO.md): commits e limites de preservação.
 - [Implementação histórica Zurich](docs/HISTORICO-ZURICH.md): referência anterior, com identificadores próprios.
 
-Pendências de preservação: conferir e exportar MTS0001019, sua aprovação e journals; verificar registros Global ou de outros escopos adicionados na etapa final. A restauração não integra as pendências do projeto. Os dados publicados da Atividade 3 não comprovam a preservação dos dados da Atividade 4. Não há nova auditoria da PDI nesta revisão documental.
+Não há pendências de encerramento. O usuário dispensou exports adicionais dos dados de teste; a restauração também não integra o escopo. Os dados publicados da Atividade 3 não comprovam a preservação dos dados da Atividade 4. Não há nova auditoria da PDI nesta revisão documental.
