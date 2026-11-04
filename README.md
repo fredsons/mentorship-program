@@ -2,7 +2,7 @@
 
 Aplicação ServiceNow para cadastrar mentores, solicitar sessões de mentoria e acompanhar sua aprovação e conclusão. Desenvolvida durante o bootcamp Shark Academy, com preferência por configurações nativas e ferramentas visuais.
 
-**Estado em 31/10/2026:** Atividades 1, 2 e 3 concluídas, com testes funcionais observados e arquivos preservados neste repositório. A Atividade 4 (Record Producer, acesso por grupos e menu no portal) está implementada, mas ainda não tem documento em `docs/` nem testes registrados. Uma possível atividade da última aula ainda depende da divulgação do enunciado.
+**Estado em 04/11/2026:** as quatro atividades e os extras estão implementados, conforme o histórico consolidado pelo autor. As Atividades 1 a 3 possuem documentação própria e exportações complementares neste repositório. A Atividade 4 inclui teste pelo Employee Center: a sessão MTS0001019 foi criada pelo portal, aprovada e chegou a Accepted. Os extras incluem obrigatoriedade de campos, visibilidade do feedback, indicador visual dos estados e validação de datas. O documento específico da Atividade 4 e a consolidação das evidências e da preservação dessa etapa ainda estão pendentes.
 
 O projeto Shark Academy reúne as atividades do bootcamp; este repositório é dedicado à aplicação Mentorship Program.
 
@@ -25,7 +25,8 @@ O projeto Shark Academy reúne as atividades do bootcamp; este repositório é d
 | 1 — Estrutura da aplicação | Tabelas, campos, estados, formulários, listas, referências e menu tradicional | [Etapas e decisões](docs/ATIVIDADE-1-BRAZIL.md) |
 | 2 — Segurança e acessos | Roles, grupos, ACLs, restrições por proprietário e visibilidade dos módulos | [Configuração e testes](docs/ATIVIDADE-2-BRAZIL.md) |
 | 3 — Flow Designer | Aprovação pelo mentor, espera pelo feedback, conclusão e incremento do contador | [Fluxo e validações](docs/ATIVIDADE-3-BRAZIL.md) |
-| 4 — Portal | Record Producer, acesso por grupos e item de menu no portal | A documentar (ver [Portal e Record Producer](#portal-e-record-producer)) |
+| 4 — Portal | Record Producer, acesso por grupos e item de menu no Employee Center; criação e aprovação da MTS0001019 | [Portal e Record Producer](#portal-e-record-producer); documento específico em `docs/` pendente |
+| Extras | Campos obrigatórios, feedback condicional, indicador de estados e validação de datas | [Validações e ajustes de formulário](#validações-e-ajustes-de-formulário) |
 
 As instruções das atividades definem os requisitos. A documentação registra a implementação realizada e seus limites, sem antecipar requisitos de atividades futuras.
 
@@ -130,7 +131,7 @@ O gatilho é **Record Created**. Editar uma sessão já concluída não inicia u
 
 ## Portal e Record Producer
 
-Implementado na Atividade 4 (commit [2f66b96](https://github.com/fredsons/mentorship-program/commit/2f66b96)). Ainda não há documento em `docs/` nem testes registrados para esta parte.
+Implementado na Atividade 4 (commit [2f66b96](https://github.com/fredsons/mentorship-program/commit/2f66b96)). Conforme o histórico consolidado pelo autor, a sessão **MTS0001019** foi criada pelo Employee Center, recebeu aprovação do mentor e chegou a **Accepted**. Esse teste não registra a conclusão dessa sessão em Done. O documento específico da Atividade 4 em `docs/` e a organização das capturas e demais evidências ainda estão pendentes.
 
 **Mentorship Session** (Record Producer, ativo) cria registros na tabela Mentorship Session. Descrição exibida: "Request here your mentorship session!".
 
@@ -142,7 +143,7 @@ Implementado na Atividade 4 (commit [2f66b96](https://github.com/fredsons/mentor
 | 400 | Choose your mentor | `mentors_name` | Referência a Mentor, filtrada por Available = true | Sim |
 
 - **Acesso:** o item usa o User Criteria **Mentorship Program Users**, que reconhece os grupos *Mentorship Program - Mentorados* e *Mentorship Program - Mentores* (basta pertencer a um deles).
-- **Menu:** item **New Mentorship Session** no portal, apontando para o Record Producer.
+- **Menu:** item **New Mentorship Session** no Employee Center, apontando para o Record Producer, com visibilidade conforme o perfil.
 - O script do Record Producer é o modelo padrão da plataforma, sem lógica adicional.
 
 ## Validações e ajustes de formulário
@@ -150,12 +151,12 @@ Implementado na Atividade 4 (commit [2f66b96](https://github.com/fredsons/mentor
 | Recurso | O que faz |
 |---|---|
 | Business Rule **Impedir data de sessão anterior a hoje.** | Executa antes de inserir ou atualizar. Aborta a gravação quando Session Date é anterior ao início de hoje e o campo foi alterado, e exibe "A data da sessão não pode ser anterior a hoje." A lógica está na condição de filtro; o script está vazio. |
-| Catalog UI Policy **Validar data da sessão no portal** | No portal, mostra a mesma mensagem de erro no campo de data quando ele é anterior a hoje, antes do envio. Sem script. |
+| Validação de data no portal | O histórico consolidado registra mensagem junto ao campo e limpeza da data inválida. A configuração anterior era a Catalog UI Policy **Validar data da sessão no portal**; o detalhamento técnico da solução final ainda precisa ser consolidado antes de atribuir esse comportamento apenas à policy ou classificá-lo como sem script. |
 | UI Policy **Obrigatoriedade dos campos da sessão** | Torna Short description, Mentor's Name e Session Date obrigatórios no formulário da plataforma. |
 | UI Policy **Exibir feedback em sessões aceitas ou concluídas** | Mostra Session Feedback somente quando State é Accepted ou Done. |
 | Process Flow no formulário | Barra de fases: Draft → Awaiting approval → Accepted → Done, com Rejected/Canceled como desfecho alternativo. |
 
-A regra de negócio vale para qualquer origem de gravação, inclusive o portal, e a Catalog UI Policy é apenas o aviso antecipado no portal. Os testes dessas validações ainda não estão documentados.
+A regra de negócio protege a gravação; a validação no portal orienta o preenchimento com mensagem junto ao campo e limpeza da data inválida, conforme o histórico consolidado pelo autor. Ainda falta organizar as evidências e detalhar os cenários executados, incluindo criação e edição, datas inválidas e válidas, no formulário da plataforma e no portal. A configuração de uma policy, isoladamente, não comprova o resultado funcional nem a segurança por perfil.
 
 ## Validação realizada
 
@@ -170,6 +171,8 @@ A regra de negócio vale para qualquer origem de gravação, inclusive o portal,
 | Contador após conclusão | Abel passou de 0 para 1 |
 | MTS0001018 — rejeição | Aprovação Rejected; sessão Rejected/Canceled; contador permaneceu em 1 |
 | Feedback completo | Texto persistido após ampliar o campo HTML de 40 para 4.000 caracteres |
+| MTS0001019 — portal | Conforme o histórico consolidado pelo autor: criada pelo Employee Center, aprovada pelo mentor e em Accepted |
+| Data inválida no portal | Conforme o histórico consolidado pelo autor: mensagem junto ao campo e limpeza da data inválida; evidências e cenários detalhados pendentes de consolidação |
 
 A plataforma exigiu comentário para rejeitar a aprovação. Após informar a justificativa, o caminho de rejeição foi concluído. As mudanças automáticas de State foram observadas no histórico como realizadas por System.
 
@@ -185,7 +188,7 @@ A plataforma exigiu comentário para rejeitar a aprovação. Após informar a ju
 | [Layout Global de Approvers](exports/mentorship-program/brazil/global-approvers/) | Configuração complementar da lista relacionada |
 | [Exportações anteriores](exports/mentorship-program/brazil/data/) | Marcos históricos das Atividades 1 e 2 e seus READMEs |
 
-Os dados da Atividade 3 são o marco mais recente de mentores, sessões e aprovações. Os XMLs anteriores permanecem como histórico; seus contadores e estados refletem a época de cada exportação.
+Os dados da Atividade 3 são o marco mais recente de mentores, sessões e aprovações listado nesta documentação. A preservação da MTS0001019 e de sua aprovação ainda precisa ser conferida; não é presumida como incluída nesses XMLs. Os XMLs anteriores permanecem como histórico; seus contadores e estados refletem a época de cada exportação.
 
 ## Preservação e recuperação
 
@@ -210,4 +213,4 @@ Marcos recentes:
 
 Alterações feitas na PDI precisam de novos commits pelo **Source control → Commit changes**. Depois de alterações feitas diretamente neste repositório, executar **Source control → Pull from repository** na aplicação antes de continuar o desenvolvimento, preservando eventuais alterações locais.
 
-Os testes atuais cobrem os caminhos funcionais das Atividades 1 a 3; portal e validações de data ainda não foram documentados. Concorrência entre conclusões simultâneas, alteração do mentor durante uma execução, conteúdo HTML composto apenas por marcações vazias e chamadas por API não foram validados. Novas atividades serão incorporadas conforme seus enunciados forem disponibilizados.
+Os testes registrados cobrem os caminhos funcionais das Atividades 1 a 3. Este README também registra, a partir do histórico consolidado pelo autor, a criação e aprovação da MTS0001019 pelo portal e o ajuste de validação de data. Permanecem pendentes o documento específico da Atividade 4, a organização das evidências dos extras, o detalhamento dos testes de acesso ao portal por perfil e a conferência dos commits e exports finais, distinguindo configurações do escopo, dados e registros Global. Concorrência entre conclusões simultâneas, alteração do mentor durante uma execução, conteúdo HTML composto apenas por marcações vazias e chamadas por API não foram validados. Novas atividades serão incorporadas conforme seus enunciados forem disponibilizados.
