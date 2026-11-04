@@ -4,6 +4,10 @@ Documentação consolidada em 04/11/2026; registros de execução de 01/11/2026 
 
 Ambiente: PDI `dev457483`, versão Brazil, aplicação Mentorship Program, escopo `x_2273184_mentor_0`. A documentação Zurich descreve a implementação histórica.
 
+## Encerramento — 04/11/2026
+
+**Projeto concluído em 04/11/2026 por decisão do usuário.** As quatro atividades e os extras de Mentorship Program estão encerrados, com implementação, testes registrados e documentação publicada. Exports adicionais dos dados de teste da Atividade 4 foram dispensados para o encerramento. A restauração não está planejada; a PDI antiga foi liberada. Não há ação pendente para concluir esta entrega. Os limites de preservação e os cenários não testados permanecem registrados como histórico, sem representar tarefas abertas.
+
 ## Requisitos e resultado
 
 A Atividade 4 pede um Record Producer para criar sessões pelo Employee Center, com variáveis mapeadas para a tabela Mentorship Session, acesso limitado aos dois grupos da aplicação e um item no menu do portal.
@@ -158,7 +162,7 @@ O usuário confirmou os commits das configurações da Atividade 4 e dos extras,
 
 Essa conferência confirma os commits, sem representar nova execução dos testes na PDI.
 
-Configurações da aplicação pertencentes ao escopo são versionadas pela integração com Git. Isso não equivale a um backup completo da PDI: sessões, mentores, grupos, associações, aprovações e journals precisam de preservação separada quando não incluídos como arquivos da aplicação. Os novos dados da Atividade 4 ainda não têm exportação confirmada neste registro.
+Configurações da aplicação pertencentes ao escopo são versionadas pela integração com Git. Isso não equivale a um backup completo da PDI: sessões, mentores, grupos, associações, aprovações e journals precisam de preservação separada quando não incluídos como arquivos da aplicação. Os novos dados da Atividade 4 não têm exportação confirmada neste registro; esses exports adicionais foram dispensados pelo usuário para o encerramento.
 
 Registros Global e configurações de outros escopos exigem conferência e exportação próprias. O layout Global de Approvers já era tratado separadamente nas etapas anteriores. Arquivos Markdown e exports fora do caminho da aplicação no repositório não viram telas ou registros do ServiceNow ao executar Pull.
 
