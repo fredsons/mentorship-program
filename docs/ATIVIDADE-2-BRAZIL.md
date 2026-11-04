@@ -103,3 +103,4 @@ Instalar primeiro a aplicação e suas roles; conferir usuários e sys_ids; impo
 - Enunciado: imagens 1, 2 e 3 da Atividade 2, fornecidas pelo usuário.
 - [ACL types — documentação oficial](https://www.servicenow.com/docs/r/platform-security/access-control/acl-rule-types.html): avaliação de tabela/campo e herança.
 - [Explore Access Control Lists — documentação oficial](https://www.servicenow.com/docs/r/platform-security/access-control/exploring-access-control-list.html): condições, operações e comportamento de registros novos.
+
