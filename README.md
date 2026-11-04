@@ -168,7 +168,7 @@ Os dados da Atividade 3 são o marco mais recente de mentores, sessões e aprova
 
 **Source control preserva configurações; os XMLs complementares preservam os dados exportados.** Documentos e XMLs de dados não viram registros automaticamente por Pull from repository.
 
-Para preparar uma recuperação:
+Referência para uma eventual recuperação futura, caso seja necessária:
 
 1. Importar a aplicação pelo Source control e conferir suas dependências.
 2. Conferir os usuários referenciados, pois seus cadastros não estão incluídos nas exportações.
@@ -176,7 +176,7 @@ Para preparar uma recuperação:
 4. Restaurar mentores antes das sessões e aprovações; tratar grupos, atribuições e layout Global separadamente.
 5. Consultar os READMEs dos XMLs e validar permissões, vínculos e automação no ambiente de destino.
 
-**A restauração em outra PDI ainda não foi testada.** As exportações não representam um backup integral da instância: credenciais, usuários, auditoria completa e contextos de execução do fluxo não estão incluídos.
+**A restauração em outra PDI não foi testada e não está planejada, por decisão do usuário.** A PDI antiga dev435099 (Zurich) foi liberada pelo usuário; não há recuperação dessa instância pendente. As exportações não representam um backup integral da instância: credenciais, usuários, auditoria completa e contextos de execução do fluxo não estão incluídos.
 
 Marcos recentes:
 
@@ -204,4 +204,4 @@ O usuário confirmou a preservação das configurações. Commits conferidos: At
 - [Marcos de versionamento](docs/VERSIONAMENTO.md): commits e limites de preservação.
 - [Implementação histórica Zurich](docs/HISTORICO-ZURICH.md): referência anterior, com identificadores próprios.
 
-Pendências de preservação: conferir e exportar MTS0001019, sua aprovação e journals; verificar registros Global ou de outros escopos adicionados na etapa final; testar restauração em outra PDI. Os dados publicados da Atividade 3 não comprovam a preservação dos dados da Atividade 4. Não há nova auditoria da PDI nesta revisão documental.
+Pendências de preservação: conferir e exportar MTS0001019, sua aprovação e journals; verificar registros Global ou de outros escopos adicionados na etapa final. A restauração não integra as pendências do projeto. Os dados publicados da Atividade 3 não comprovam a preservação dos dados da Atividade 4. Não há nova auditoria da PDI nesta revisão documental.
