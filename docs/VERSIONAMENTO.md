@@ -1,5 +1,9 @@
 # Versionamento — Shark Academy
 
+## Encerramento — 04/11/2026
+
+**Projeto concluído em 04/11/2026 por decisão do usuário.** As quatro atividades e os extras de Mentorship Program estão encerrados, com implementação, testes registrados e documentação publicada. Exports adicionais dos dados de teste da Atividade 4 foram dispensados para o encerramento. A restauração não está planejada; a PDI antiga foi liberada. Não há ação pendente para concluir esta entrega. Os limites de preservação e os cenários não testados permanecem registrados como histórico, sem representar tarefas abertas.
+
 ## Estado consolidado — 04/11/2026
 
 As quatro atividades e os extras de Mentorship Program estão implementados e documentados. Ambiente atual: dev457483, Brazil, escopo `x_2273184_mentor_0`. O histórico abaixo preserva as pendências existentes em cada data; elas não devem ser interpretadas como pendências atuais quando houver marco posterior.
@@ -13,7 +17,7 @@ As quatro atividades e os extras de Mentorship Program estão implementados e do
 | Melhoria visual da data no portal | `227e9bb575a97ce016c5f66c6cf3cc369946c670` |
 | README atualizado em 04/11 | `9e151bfe50430160c3a09abd8f4847a896822022` |
 
-MTS0001019 foi criada pelo portal, aprovada e observada em Accepted. Os XMLs de dados listados mais recentes continuam sendo os da Atividade 3. Exportação dos dados da Atividade 4 e conferência de componentes Global/outros escopos permanecem sem confirmação. A PDI antiga dev435099 (Zurich) foi liberada pelo usuário. A restauração em outra PDI não foi testada e não está planejada; não integra as pendências do projeto. Essa decisão atual substitui as expectativas históricas de recuperação registradas abaixo. A revisão atual publica documentação; não altera a aplicação na PDI nem gera novos exports.
+MTS0001019 foi criada pelo portal, aprovada e observada em Accepted. Os XMLs de dados listados mais recentes continuam sendo os da Atividade 3. Não foram confirmados novos exports dos dados da Atividade 4 nem uma conferência adicional de componentes Global/outros escopos. Esses limites de preservação foram aceitos no encerramento e não representam tarefas abertas. A PDI antiga dev435099 (Zurich) foi liberada pelo usuário. A restauração em outra PDI não foi testada e não está planejada; não integra as pendências do projeto. Essa decisão atual substitui as expectativas históricas de recuperação registradas abaixo. A revisão atual publica documentação; não altera a aplicação na PDI nem gera novos exports.
 
 Após alterações documentais externas, sincronizar a PDI por Pull from repository antes de novos commits, preservando mudanças locais. Markdown e exports fora da pasta nativa não viram registros da plataforma.
 
